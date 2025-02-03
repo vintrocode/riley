@@ -1,5 +1,6 @@
 # Quartz v4
 
+to run the site locally:
 ```
 npm i
 npx quartz build --serve --port 8080
