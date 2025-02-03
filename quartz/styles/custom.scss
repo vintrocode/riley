@@ -1,0 +1,99 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+@font-face {
+  font-family: "Departure Mono";
+  src: url("../static/DepartureMono-Regular.otf");
+}
+
+// captions!
+img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+iframe + p {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+// center all images by default
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tweet-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Callouts
+
+.callout {
+  &[data-callout="custom"] {
+    --color: var(--darkgray);
+    --border: var(--tertiary);
+    --bg: var(--customCallout);
+    --callout-icon: var(--callout-icon-tip);
+  }
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*   .callout { */
+/*     &[data-callout="custom"] { */
+/*       --color: #09FEF8; */
+/*       --border:#09FEF8; */
+/*       --bg: #00b0ff10; */
+/*       --callout-icon: var(--callout-icon-tip); */
+/*     } */
+/*   } */
+/* } */
+/* @media (prefers-color-scheme: light) { */
+/* .callout { */
+/*   &[data-callout="custom"] { */
+/**/
+/*     --color: #FF5A7E; */
+/*     --border:#FF5A7E; */
+/*     --bg: #db424210; */
+/*     --callout-icon: var(--callout-icon-tip); */
+/*   } */
+/* } */
+/* } */
+
+.explorer {
+  font-size: 0.85rem;
+  
+  .folder, .file {
+    a {
+      font-size: 0.85rem;
+      font-weight: 200 !important;
+    }
+  }
+}
+
+.toc {
+  font-size: 0.85rem;
+  
+  a {
+    font-size: 0.85rem;
+    font-weight: 600 !important;
+  }
+}
+
+body {
+  font-size: 0.95rem;
+}
+
+input[type="search"] {
+  background-color: var(--searchBackground);
+}
